@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46C37EF8203F76A3008B6CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37EF7203F76A3008B6CBA /* AppDelegate.swift */; };
+		46C37EFF203F76A3008B6CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C37EFE203F76A3008B6CBA /* Assets.xcassets */; };
+		46C37F02203F76A3008B6CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C37F00203F76A3008B6CBA /* LaunchScreen.storyboard */; };
+		46C37F0E203FF23F008B6CBA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F0D203FF23E008B6CBA /* Coordinator.swift */; };
+		46C37F10203FF278008B6CBA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F0F203FF278008B6CBA /* AppCoordinator.swift */; };
+		46C37F12203FF402008B6CBA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F11203FF402008B6CBA /* HomeViewController.swift */; };
+		46C37F14203FF514008B6CBA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F13203FF514008B6CBA /* BaseView.swift */; };
+		46C37F16203FF54F008B6CBA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F15203FF54F008B6CBA /* BaseViewController.swift */; };
+		46C37F18203FF605008B6CBA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F17203FF605008B6CBA /* HomeView.swift */; };
+		46C37F1A203FF6C5008B6CBA /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F19203FF6C5008B6CBA /* CustomTabBarViewController.swift */; };
+		46C37F1C203FF788008B6CBA /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F1B203FF788008B6CBA /* CustomTabBarView.swift */; };
+		46C37F1F203FFBD9008B6CBA /* UIColors+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F1E203FFBD9008B6CBA /* UIColors+Custom.swift */; };
+		6B736DCB875C2CD963C825A4 /* Pods_Craigslist_Redesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F15E6A1FC39D1EA895D29CF /* Pods-Craigslist Redesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craigslist Redesign.release.xcconfig"; path = "Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign.release.xcconfig"; sourceTree = "<group>"; };
+		46C37EF4203F76A3008B6CBA /* Craigslist Redesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Craigslist Redesign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C37EF7203F76A3008B6CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46C37EFE203F76A3008B6CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46C37F01203F76A3008B6CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46C37F03203F76A3008B6CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C37F0D203FF23E008B6CBA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		46C37F0F203FF278008B6CBA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		46C37F11203FF402008B6CBA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		46C37F13203FF514008B6CBA /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		46C37F15203FF54F008B6CBA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		46C37F17203FF605008B6CBA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		46C37F19203FF6C5008B6CBA /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		46C37F1B203FF788008B6CBA /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		46C37F1E203FFBD9008B6CBA /* UIColors+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Custom.swift"; sourceTree = "<group>"; };
+		89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Craigslist_Redesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3A96AB0A4C1CCE03F733E7 /* Pods-Craigslist Redesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craigslist Redesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46C37EF1203F76A3008B6CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B736DCB875C2CD963C825A4 /* Pods_Craigslist_Redesign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46C37EEB203F76A3008B6CBA = {
+			isa = PBXGroup;
+			children = (
+				46C37EF6203F76A3008B6CBA /* Craigslist Redesign */,
+				46C37EF5203F76A3008B6CBA /* Products */,
+				917B25FADEFFF3DC0F6580AD /* Pods */,
+				DE3D4AE903A11D1BA93FC072 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46C37EF5203F76A3008B6CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46C37EF4203F76A3008B6CBA /* Craigslist Redesign.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46C37EF6203F76A3008B6CBA /* Craigslist Redesign */ = {
+			isa = PBXGroup;
+			children = (
+				46C37F1D203FFBCC008B6CBA /* Extensions */,
+				46C37F0C203F81D8008B6CBA /* Views */,
+				46C37F0B203F81D1008B6CBA /* View Controllers */,
+				46C37F0A203F81C9008B6CBA /* Coordinators */,
+				46C37EF7203F76A3008B6CBA /* AppDelegate.swift */,
+				46C37F09203F78DD008B6CBA /* Resources */,
+			);
+			path = "Craigslist Redesign";
+			sourceTree = "<group>";
+		};
+		46C37F09203F78DD008B6CBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46C37EFE203F76A3008B6CBA /* Assets.xcassets */,
+				46C37F00203F76A3008B6CBA /* LaunchScreen.storyboard */,
+				46C37F03203F76A3008B6CBA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		46C37F0A203F81C9008B6CBA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				46C37F0D203FF23E008B6CBA /* Coordinator.swift */,
+				46C37F0F203FF278008B6CBA /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		46C37F0B203F81D1008B6CBA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46C37F11203FF402008B6CBA /* HomeViewController.swift */,
+				46C37F15203FF54F008B6CBA /* BaseViewController.swift */,
+				46C37F19203FF6C5008B6CBA /* CustomTabBarViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		46C37F0C203F81D8008B6CBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46C37F13203FF514008B6CBA /* BaseView.swift */,
+				46C37F17203FF605008B6CBA /* HomeView.swift */,
+				46C37F1B203FF788008B6CBA /* CustomTabBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46C37F1D203FFBCC008B6CBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46C37F1E203FFBD9008B6CBA /* UIColors+Custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		917B25FADEFFF3DC0F6580AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F3A96AB0A4C1CCE03F733E7 /* Pods-Craigslist Redesign.debug.xcconfig */,
+				3F15E6A1FC39D1EA895D29CF /* Pods-Craigslist Redesign.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE3D4AE903A11D1BA93FC072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46C37EF3203F76A3008B6CBA /* Craigslist Redesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C37F06203F76A3008B6CBA /* Build configuration list for PBXNativeTarget "Craigslist Redesign" */;
+			buildPhases = (
+				72E84C0BDE76D436C6183EE7 /* [CP] Check Pods Manifest.lock */,
+				46C37EF0203F76A3008B6CBA /* Sources */,
+				46C37EF1203F76A3008B6CBA /* Frameworks */,
+				46C37EF2203F76A3008B6CBA /* Resources */,
+				210552F851178097D6539333 /* [CP] Embed Pods Frameworks */,
+				23404CE336904992C2D19415 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Craigslist Redesign";
+			productName = "Craigslist Redesign";
+			productReference = 46C37EF4203F76A3008B6CBA /* Craigslist Redesign.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46C37EEC203F76A3008B6CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Kenny Dang";
+				TargetAttributes = {
+					46C37EF3203F76A3008B6CBA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 46C37EEF203F76A3008B6CBA /* Build configuration list for PBXProject "Craigslist Redesign" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46C37EEB203F76A3008B6CBA;
+			productRefGroup = 46C37EF5203F76A3008B6CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46C37EF3203F76A3008B6CBA /* Craigslist Redesign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46C37EF2203F76A3008B6CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C37F02203F76A3008B6CBA /* LaunchScreen.storyboard in Resources */,
+				46C37EFF203F76A3008B6CBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210552F851178097D6539333 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23404CE336904992C2D19415 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72E84C0BDE76D436C6183EE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Craigslist Redesign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46C37EF0203F76A3008B6CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C37F1F203FFBD9008B6CBA /* UIColors+Custom.swift in Sources */,
+				46C37F1C203FF788008B6CBA /* CustomTabBarView.swift in Sources */,
+				46C37F10203FF278008B6CBA /* AppCoordinator.swift in Sources */,
+				46C37F18203FF605008B6CBA /* HomeView.swift in Sources */,
+				46C37F1A203FF6C5008B6CBA /* CustomTabBarViewController.swift in Sources */,
+				46C37F0E203FF23F008B6CBA /* Coordinator.swift in Sources */,
+				46C37F14203FF514008B6CBA /* BaseView.swift in Sources */,
+				46C37EF8203F76A3008B6CBA /* AppDelegate.swift in Sources */,
+				46C37F12203FF402008B6CBA /* HomeViewController.swift in Sources */,
+				46C37F16203FF54F008B6CBA /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46C37F00203F76A3008B6CBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46C37F01203F76A3008B6CBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46C37F04203F76A3008B6CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46C37F05203F76A3008B6CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46C37F07203F76A3008B6CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3A96AB0A4C1CCE03F733E7 /* Pods-Craigslist Redesign.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AM7T72WW66;
+				INFOPLIST_FILE = "$(SRCROOT)/Craigslist Redesign/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frooctus.Craigslist-Redesign";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46C37F08203F76A3008B6CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F15E6A1FC39D1EA895D29CF /* Pods-Craigslist Redesign.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AM7T72WW66;
+				INFOPLIST_FILE = "$(SRCROOT)/Craigslist Redesign/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.frooctus.Craigslist-Redesign";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C37EEF203F76A3008B6CBA /* Build configuration list for PBXProject "Craigslist Redesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C37F04203F76A3008B6CBA /* Debug */,
+				46C37F05203F76A3008B6CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C37F06203F76A3008B6CBA /* Build configuration list for PBXNativeTarget "Craigslist Redesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C37F07203F76A3008B6CBA /* Debug */,
+				46C37F08203F76A3008B6CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46C37EEC203F76A3008B6CBA /* Project object */;
+}

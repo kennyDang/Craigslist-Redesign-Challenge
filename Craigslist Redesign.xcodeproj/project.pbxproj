@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4692EB0C20411FA300967B57 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB0B20411FA300967B57 /* Category.swift */; };
+		4692EB0E204130A800967B57 /* Enum+Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB0D204130A800967B57 /* Enum+Enumerate.swift */; };
+		4692EB112041326200967B57 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB102041326200967B57 /* CategoryCollectionViewCell.swift */; };
+		4692EB1320413DD300967B57 /* UICollectionViewCell+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1220413DD300967B57 /* UICollectionViewCell+Reuse.swift */; };
+		4692EB15204146ED00967B57 /* CategorySectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB14204146ED00967B57 /* CategorySectionReusableView.swift */; };
+		4692EB1720414CAF00967B57 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1620414CAF00967B57 /* CategoryTableViewCell.swift */; };
+		4692EB1B2042903400967B57 /* CategoryDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1A2042903400967B57 /* CategoryDetailListViewController.swift */; };
+		4692EB1D2042908800967B57 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1C2042908800967B57 /* PostTableViewCell.swift */; };
+		4692EB1F204294E400967B57 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1E204294E400967B57 /* Post.swift */; };
 		46C37EF8203F76A3008B6CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37EF7203F76A3008B6CBA /* AppDelegate.swift */; };
 		46C37EFF203F76A3008B6CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C37EFE203F76A3008B6CBA /* Assets.xcassets */; };
 		46C37F02203F76A3008B6CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C37F00203F76A3008B6CBA /* LaunchScreen.storyboard */; };
@@ -19,11 +28,26 @@
 		46C37F1A203FF6C5008B6CBA /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F19203FF6C5008B6CBA /* CustomTabBarViewController.swift */; };
 		46C37F1C203FF788008B6CBA /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F1B203FF788008B6CBA /* CustomTabBarView.swift */; };
 		46C37F1F203FFBD9008B6CBA /* UIColors+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F1E203FFBD9008B6CBA /* UIColors+Custom.swift */; };
+		46C37F232040D7E3008B6CBA /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F222040D7E3008B6CBA /* UIViewController+Child.swift */; };
+		46C37F272040E28F008B6CBA /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F262040E28F008B6CBA /* MessageListViewController.swift */; };
+		46C37F292040E297008B6CBA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F282040E297008B6CBA /* ProfileViewController.swift */; };
+		46C37F2B2040E48C008B6CBA /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F2A2040E48C008B6CBA /* MessageListView.swift */; };
+		46C37F2D2040E494008B6CBA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F2C2040E494008B6CBA /* ProfileView.swift */; };
+		46C37F2F2040FB27008B6CBA /* HomeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F2E2040FB27008B6CBA /* HomeListCoordinator.swift */; };
 		6B736DCB875C2CD963C825A4 /* Pods_Craigslist_Redesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F15E6A1FC39D1EA895D29CF /* Pods-Craigslist Redesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craigslist Redesign.release.xcconfig"; path = "Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign.release.xcconfig"; sourceTree = "<group>"; };
+		4692EB0B20411FA300967B57 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4692EB0D204130A800967B57 /* Enum+Enumerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Enumerate.swift"; sourceTree = "<group>"; };
+		4692EB102041326200967B57 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		4692EB1220413DD300967B57 /* UICollectionViewCell+Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Reuse.swift"; sourceTree = "<group>"; };
+		4692EB14204146ED00967B57 /* CategorySectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionReusableView.swift; sourceTree = "<group>"; };
+		4692EB1620414CAF00967B57 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		4692EB1A2042903400967B57 /* CategoryDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailListViewController.swift; sourceTree = "<group>"; };
+		4692EB1C2042908800967B57 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		4692EB1E204294E400967B57 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		46C37EF4203F76A3008B6CBA /* Craigslist Redesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Craigslist Redesign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C37EF7203F76A3008B6CBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46C37EFE203F76A3008B6CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +62,12 @@
 		46C37F19203FF6C5008B6CBA /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		46C37F1B203FF788008B6CBA /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		46C37F1E203FFBD9008B6CBA /* UIColors+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Custom.swift"; sourceTree = "<group>"; };
+		46C37F222040D7E3008B6CBA /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		46C37F262040E28F008B6CBA /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		46C37F282040E297008B6CBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		46C37F2A2040E48C008B6CBA /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		46C37F2C2040E494008B6CBA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		46C37F2E2040FB27008B6CBA /* HomeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCoordinator.swift; sourceTree = "<group>"; };
 		89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Craigslist_Redesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3A96AB0A4C1CCE03F733E7 /* Pods-Craigslist Redesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craigslist Redesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4692EB0A20411F9800967B57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4692EB0B20411FA300967B57 /* Category.swift */,
+				4692EB1E204294E400967B57 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4692EB0F2041324600967B57 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4692EB102041326200967B57 /* CategoryCollectionViewCell.swift */,
+				4692EB1620414CAF00967B57 /* CategoryTableViewCell.swift */,
+				4692EB1C2042908800967B57 /* PostTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		46C37EEB203F76A3008B6CBA = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +124,7 @@
 		46C37EF6203F76A3008B6CBA /* Craigslist Redesign */ = {
 			isa = PBXGroup;
 			children = (
+				4692EB0A20411F9800967B57 /* Models */,
 				46C37F1D203FFBCC008B6CBA /* Extensions */,
 				46C37F0C203F81D8008B6CBA /* Views */,
 				46C37F0B203F81D1008B6CBA /* View Controllers */,
@@ -100,6 +150,7 @@
 			children = (
 				46C37F0D203FF23E008B6CBA /* Coordinator.swift */,
 				46C37F0F203FF278008B6CBA /* AppCoordinator.swift */,
+				46C37F2E2040FB27008B6CBA /* HomeListCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -110,6 +161,9 @@
 				46C37F11203FF402008B6CBA /* HomeViewController.swift */,
 				46C37F15203FF54F008B6CBA /* BaseViewController.swift */,
 				46C37F19203FF6C5008B6CBA /* CustomTabBarViewController.swift */,
+				46C37F262040E28F008B6CBA /* MessageListViewController.swift */,
+				46C37F282040E297008B6CBA /* ProfileViewController.swift */,
+				4692EB1A2042903400967B57 /* CategoryDetailListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -117,9 +171,13 @@
 		46C37F0C203F81D8008B6CBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4692EB0F2041324600967B57 /* Cells */,
 				46C37F13203FF514008B6CBA /* BaseView.swift */,
 				46C37F17203FF605008B6CBA /* HomeView.swift */,
 				46C37F1B203FF788008B6CBA /* CustomTabBarView.swift */,
+				46C37F2A2040E48C008B6CBA /* MessageListView.swift */,
+				46C37F2C2040E494008B6CBA /* ProfileView.swift */,
+				4692EB14204146ED00967B57 /* CategorySectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				46C37F1E203FFBD9008B6CBA /* UIColors+Custom.swift */,
+				46C37F222040D7E3008B6CBA /* UIViewController+Child.swift */,
+				4692EB0D204130A800967B57 /* Enum+Enumerate.swift */,
+				4692EB1220413DD300967B57 /* UICollectionViewCell+Reuse.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,12 +343,27 @@
 				46C37F1F203FFBD9008B6CBA /* UIColors+Custom.swift in Sources */,
 				46C37F1C203FF788008B6CBA /* CustomTabBarView.swift in Sources */,
 				46C37F10203FF278008B6CBA /* AppCoordinator.swift in Sources */,
+				4692EB15204146ED00967B57 /* CategorySectionReusableView.swift in Sources */,
 				46C37F18203FF605008B6CBA /* HomeView.swift in Sources */,
 				46C37F1A203FF6C5008B6CBA /* CustomTabBarViewController.swift in Sources */,
 				46C37F0E203FF23F008B6CBA /* Coordinator.swift in Sources */,
 				46C37F14203FF514008B6CBA /* BaseView.swift in Sources */,
+				4692EB1D2042908800967B57 /* PostTableViewCell.swift in Sources */,
+				46C37F2D2040E494008B6CBA /* ProfileView.swift in Sources */,
 				46C37EF8203F76A3008B6CBA /* AppDelegate.swift in Sources */,
+				46C37F2B2040E48C008B6CBA /* MessageListView.swift in Sources */,
+				4692EB112041326200967B57 /* CategoryCollectionViewCell.swift in Sources */,
+				46C37F232040D7E3008B6CBA /* UIViewController+Child.swift in Sources */,
+				4692EB0C20411FA300967B57 /* Category.swift in Sources */,
 				46C37F12203FF402008B6CBA /* HomeViewController.swift in Sources */,
+				4692EB1F204294E400967B57 /* Post.swift in Sources */,
+				4692EB1320413DD300967B57 /* UICollectionViewCell+Reuse.swift in Sources */,
+				4692EB0E204130A800967B57 /* Enum+Enumerate.swift in Sources */,
+				4692EB1720414CAF00967B57 /* CategoryTableViewCell.swift in Sources */,
+				46C37F292040E297008B6CBA /* ProfileViewController.swift in Sources */,
+				46C37F2F2040FB27008B6CBA /* HomeListCoordinator.swift in Sources */,
+				4692EB1B2042903400967B57 /* CategoryDetailListViewController.swift in Sources */,
+				46C37F272040E28F008B6CBA /* MessageListViewController.swift in Sources */,
 				46C37F16203FF54F008B6CBA /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

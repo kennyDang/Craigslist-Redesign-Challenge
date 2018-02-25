@@ -9,9 +9,20 @@
 import UIKit
 import PinLayout
 
+protocol CustomTabBarDelegate: class {
+    func customTabBarDidSelect(button: UIButton)
+}
+
 class CustomTabBarView: BaseView {
 
     // MARK: - Instance properties
+
+    let safeAreaContainerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+
+        return view
+    }()
 
     let tabBarContainerView: UIView = {
         let view = UIView()
@@ -70,6 +81,8 @@ class CustomTabBarView: BaseView {
         return button
     }()
 
+    weak var delegate: CustomTabBarDelegate?
+
     // MARK: - Initalization
 
     override init() {
@@ -92,8 +105,9 @@ class CustomTabBarView: BaseView {
     // MARK: - Setup
 
     private func addSubViews() {
-        addSubview(contentView)
-        addSubview(tabBarContainerView)
+        addSubview(safeAreaContainerView)
+        safeAreaContainerView.addSubview(contentView)
+        safeAreaContainerView.addSubview(tabBarContainerView)
 
         tabBarContainerView.addSubview(separatorLine)
         tabBarContainerView.addSubview(homeButton)
@@ -108,18 +122,19 @@ class CustomTabBarView: BaseView {
     }
 
     @objc private func didSelectHomeButton() {
-
+        delegate?.customTabBarDidSelect(button: homeButton)
     }
 
     @objc private func didSelectMessageButton() {
-
+        delegate?.customTabBarDidSelect(button: messageButton)
     }
 
     @objc private func didSelectProfileButton() {
-
+        delegate?.customTabBarDidSelect(button: profileButton)
     }
 
     private func setupLayout() {
+        safeAreaContainerView.pin.all().margin(safeArea)
         tabBarContainerView.pin.left().right().bottom().height(49)
         separatorLine.pin.left().right().height(1).top()
         messageButton.pin.size(25).center()

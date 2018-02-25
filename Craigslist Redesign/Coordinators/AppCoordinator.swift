@@ -20,15 +20,16 @@ class AppCoordinator: Coordinator {
 
     // MARK: - Initialization
 
-    init(window: UIWindow, rootViewController: UIViewController) {
+    init(window: UIWindow, rootViewController: BaseViewController) {
         self.window = window
         self.rootViewController = rootViewController
 
         navigationViewController = UINavigationController(rootViewController: self.rootViewController)
+        navigationViewController.navigationBar.isHidden = true
     }
 
     func start() {
-        window.rootViewController = rootViewController
+        window.rootViewController = navigationViewController
         window.makeKeyAndVisible()
     }
 }

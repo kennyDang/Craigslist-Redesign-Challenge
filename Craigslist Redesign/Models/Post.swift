@@ -11,5 +11,6 @@ import Foundation
 struct Post {
     var title: String
     var description: String
-    var date: String /// Going the hacky route with fake dates
+    var date: String
+    var location: String
 }

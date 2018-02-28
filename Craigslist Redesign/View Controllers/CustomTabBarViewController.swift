@@ -16,11 +16,10 @@ class CustomTabBarViewController: BaseViewController {
         return self.view as! CustomTabBarView
     }
 
-    let homeViewController = HomeViewController()
-    let messageViewController = MessageListViewController()
     let profileViewController = ProfileViewController()
 
     let homeListCoordinator = HomeListCoordinator()
+    let messageListCoordinator = MessageListCoordinator()
 
     // MARK: - Initialization
 
@@ -56,13 +55,15 @@ class CustomTabBarViewController: BaseViewController {
 
     private func removeChildViewControllers() {
         profileViewController.remove()
-        messageViewController.remove()
-        homeViewController.remove()
+        homeListCoordinator.rootViewController.remove()
+        messageListCoordinator.rootViewController.remove()
     }
 
     private func startCoordinators() {
         homeListCoordinator.start()
+        messageListCoordinator.start()
     }
+
 }
 
 extension CustomTabBarViewController: CustomTabBarDelegate {
@@ -73,7 +74,7 @@ extension CustomTabBarViewController: CustomTabBarDelegate {
         case 0:
             setup(viewController: homeListCoordinator.rootViewController)
         case 1:
-            setup(viewController: messageViewController)
+            setup(viewController: messageListCoordinator.rootViewController)
         case 2:
             setup(viewController: profileViewController)
         default:

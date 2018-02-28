@@ -65,7 +65,7 @@ class CategoryTableViewCell: UITableViewCell {
     }
 
     private func setupLayout() {
-        collectionView.pin.all()
+        collectionView.pin.all().marginTop(16)
     }
 
     private func setupCollectionView() {

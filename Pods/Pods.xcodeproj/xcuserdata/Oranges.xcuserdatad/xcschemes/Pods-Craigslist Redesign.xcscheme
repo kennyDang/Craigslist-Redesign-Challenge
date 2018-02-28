@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C52F9C590CC4DB53EC3E0D95A2C0E1C"
+               BlueprintIdentifier = "70C4E7EDBC4E3357DE340F6EB6009B30"
                BuildableName = "Pods_Craigslist_Redesign.framework"
                BlueprintName = "Pods-Craigslist Redesign"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C52F9C590CC4DB53EC3E0D95A2C0E1C"
+            BlueprintIdentifier = "70C4E7EDBC4E3357DE340F6EB6009B30"
             BuildableName = "Pods_Craigslist_Redesign.framework"
             BlueprintName = "Pods-Craigslist Redesign"
             ReferencedContainer = "container:Pods.xcodeproj">

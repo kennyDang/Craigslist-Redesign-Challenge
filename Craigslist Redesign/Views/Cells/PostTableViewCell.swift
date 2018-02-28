@@ -9,7 +9,7 @@
 import UIKit
 import PinLayout
 
-class PostTableViewCell: UITableViewCell {
+class PostCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Instance properties
 
@@ -26,15 +26,17 @@ class PostTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .black
+        label.numberOfLines = 0
 
         return label
     }()
 
     // MARK: - Initialization
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
 
+        backgroundColor = .white
         addSubViews()
     }
     
@@ -56,7 +58,21 @@ class PostTableViewCell: UITableViewCell {
     }
 
     private func setupLayout() {
-        dateLabel.pin.left().top().right().height(20)
-        postingTitleLabel.pin.below(of: dateLabel).left().right().bottom()
+        dateLabel.pin.left(16).top().right().height(20)
+        postingTitleLabel.pin.below(of: dateLabel, aligned: .left).right().sizeToFit(.width).marginTop(8)
+    }
+
+    func configure(post: Post) {
+        dateLabel.text = post.date
+        postingTitleLabel.text = post.title
+
+        setNeedsLayout()
+    }
+
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        contentView.pin.width(size.width)
+        setupLayout()
+
+        return CGSize(width: contentView.frame.width, height: postingTitleLabel.frame.maxY + dateLabel.frame.maxY + 40)
     }
 }

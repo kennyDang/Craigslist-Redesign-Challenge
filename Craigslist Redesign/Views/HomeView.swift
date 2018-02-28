@@ -85,7 +85,7 @@ class HomeView: BaseView {
 
     private func setupLayout() {
         searchBar.pin.left().right().top().height(10%)
-        tableView.pin.below(of: searchBar).left().right().bottom().marginLeft(30).marginTop(-20)
+        tableView.pin.below(of: searchBar).left().right().bottom().marginLeft(30)
     }
 
     private func fetchData() {

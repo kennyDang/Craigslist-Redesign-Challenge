@@ -37,11 +37,19 @@ class HomeViewController: BaseViewController {
         setupNavigationBar()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
     // MARK: - Setup
 
     private func setupNavigationBar() {
+
         let rightButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(didTapFilter))
 
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.rightBarButtonItem = rightButtonItem
     }
 

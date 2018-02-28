@@ -7,6 +7,5 @@ target 'Craigslist Redesign' do
 
   # Pods for Craigslist Redesign
   pod 'PinLayout'
-  pod "ViewAnimator"
 
 end

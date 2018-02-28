@@ -39,6 +39,22 @@ class HomeListCoordinator: Coordinator {
 
 extension HomeListCoordinator: CategoryDelegate {
     func didSelectCategory(category: Category) {
-        print("Coordinator got category: \(category)")
+        let detailViewController = CategoryDetailListViewController(category: category)
+        detailViewController.delegate = self
+        navigationController.pushViewController(detailViewController, animated: true)
+    }
+}
+
+extension HomeListCoordinator: PostDelegate {
+    func didSelect(post: Post) {
+        let postDetailViewController = PostDetailViewController(post: post)
+        postDetailViewController.delegate = self
+        navigationController.pushViewController(postDetailViewController, animated: true)
+    }
+}
+
+extension HomeListCoordinator: FinishedFlowDelegate {
+    func didFinishFlow() {
+        print("Completed flow!")
     }
 }

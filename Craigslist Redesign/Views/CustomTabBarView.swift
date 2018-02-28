@@ -47,20 +47,25 @@ class CustomTabBarView: BaseView {
     }()
 
     let homeButton: UIButton = {
-        let button = UIButton()
-        button.setImage(#imageLiteral(resourceName: "home"), for: .normal)
+        let homeImage = #imageLiteral(resourceName: "home")
+        homeImage.withRenderingMode(.alwaysOriginal)
+
+        let button = UIButton(type: .system)
+        button.setImage(homeImage, for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.tag = 0
+        button.tintColor = .customRed
 
         return button
     }()
 
     let messageButton: UIButton = {
-        let homeImage = #imageLiteral(resourceName: "email")
-        homeImage.withRenderingMode(.alwaysTemplate)
+        let messageImage = #imageLiteral(resourceName: "email")
+        messageImage.withRenderingMode(.alwaysOriginal)
 
-        let button = UIButton()
-        button.setImage(homeImage, for: .normal)
+        let button = UIButton(type: .system)
+        button.setImage(messageImage, for: .normal)
+        button.tintColor = .customDarkGreen
         button.imageView?.contentMode = .scaleAspectFit
         button.imageView?.tintColor = .customDarkGreen
         button.tag = 1
@@ -69,13 +74,13 @@ class CustomTabBarView: BaseView {
     }()
 
     let profileButton: UIButton = {
-        let homeImage = #imageLiteral(resourceName: "user")
-        homeImage.withRenderingMode(.alwaysTemplate)
+        let profileImage = #imageLiteral(resourceName: "user")
+        profileImage.withRenderingMode(.alwaysOriginal)
 
-        let button = UIButton()
-        button.setImage(homeImage, for: .normal)
+        let button = UIButton(type: .system)
+        button.setImage(profileImage, for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
-        button.imageView?.tintColor = .customDarkGreen
+        button.tintColor = .customDarkGreen
         button.tag = 2
 
         return button
@@ -123,14 +128,26 @@ class CustomTabBarView: BaseView {
 
     @objc private func didSelectHomeButton() {
         delegate?.customTabBarDidSelect(button: homeButton)
+        resetColor()
+        homeButton.tintColor = .customRed
     }
 
     @objc private func didSelectMessageButton() {
         delegate?.customTabBarDidSelect(button: messageButton)
+        resetColor()
+        messageButton.tintColor = .customRed
     }
 
     @objc private func didSelectProfileButton() {
         delegate?.customTabBarDidSelect(button: profileButton)
+        resetColor()
+        profileButton.tintColor = .customRed
+    }
+
+    private func resetColor() {
+        profileButton.tintColor = .customDarkGreen
+        homeButton.tintColor = .customDarkGreen
+        messageButton.tintColor = .customDarkGreen
     }
 
     private func setupLayout() {

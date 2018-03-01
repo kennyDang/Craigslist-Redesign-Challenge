@@ -10,8 +10,14 @@ import UIKit
 
 class ProfileViewController: BaseViewController {
 
+    // MARK: - Instance properties
+
+    let profileView = ProfileView()
+
+    // MARK: - Initialization
+
     override func loadView() {
-        view = ProfileView()
+        view = profileView
     }
 
 }

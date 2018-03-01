@@ -39,7 +39,7 @@ class HomeListCoordinator: Coordinator {
 
 extension HomeListCoordinator: CategoryDelegate {
     func didSelectCategory(category: Category) {
-        let detailViewController = CategoryDetailListViewController(category: category)
+        let detailViewController = PostListViewController(category: category)
         detailViewController.delegate = self
         navigationController.pushViewController(detailViewController, animated: true)
     }

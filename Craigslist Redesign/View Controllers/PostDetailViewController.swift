@@ -121,7 +121,7 @@ class PostDetailViewController: UIViewController {
         locationLabel.pin.below(of: titleLabel, aligned: .left).right().sizeToFit(.width).marginTop(20)
         datePostedLabel.pin.below(of: locationLabel, aligned: .left).right().sizeToFit(.width).marginTop(8)
         descriptionLabel.pin.below(of: datePostedLabel, aligned: .left).right().sizeToFit(.width).marginTop(20)
-        replyButton.pin.below(of: descriptionLabel, aligned: .left).width(90%).sizeToFit(.width).marginTop(40)
+        replyButton.pin.below(of: descriptionLabel, aligned: .left).width(90%).height(8%).marginTop(40)
         replyButton.layer.cornerRadius = 5
     }
 

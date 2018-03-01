@@ -17,7 +17,7 @@
 		4692EB1320413DD300967B57 /* UICollectionViewCell+Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1220413DD300967B57 /* UICollectionViewCell+Reuse.swift */; };
 		4692EB15204146ED00967B57 /* CategorySectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB14204146ED00967B57 /* CategorySectionReusableView.swift */; };
 		4692EB1720414CAF00967B57 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1620414CAF00967B57 /* CategoryTableViewCell.swift */; };
-		4692EB1B2042903400967B57 /* CategoryDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1A2042903400967B57 /* CategoryDetailListViewController.swift */; };
+		4692EB1B2042903400967B57 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1A2042903400967B57 /* PostListViewController.swift */; };
 		4692EB1D2042908800967B57 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1C2042908800967B57 /* PostTableViewCell.swift */; };
 		4692EB1F204294E400967B57 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692EB1E204294E400967B57 /* Post.swift */; };
 		46A6B12820453DAA005E2214 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6B12720453DAA005E2214 /* PostDetailViewController.swift */; };
@@ -38,6 +38,10 @@
 		46C37F292040E297008B6CBA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F282040E297008B6CBA /* ProfileViewController.swift */; };
 		46C37F2D2040E494008B6CBA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F2C2040E494008B6CBA /* ProfileView.swift */; };
 		46C37F2F2040FB27008B6CBA /* HomeListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C37F2E2040FB27008B6CBA /* HomeListCoordinator.swift */; };
+		46CC6E172047BBB0003A86E2 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E162047BBB0003A86E2 /* ProfileCoordinator.swift */; };
+		46CC6E192047C35B003A86E2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E182047C35B003A86E2 /* SettingsViewController.swift */; };
+		46CC6E1B2047C58F003A86E2 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E1A2047C58F003A86E2 /* SettingTableViewCell.swift */; };
+		46CC6E1D2047C93A003A86E2 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E1C2047C93A003A86E2 /* Setting.swift */; };
 		6B736DCB875C2CD963C825A4 /* Pods_Craigslist_Redesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +57,7 @@
 		4692EB1220413DD300967B57 /* UICollectionViewCell+Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Reuse.swift"; sourceTree = "<group>"; };
 		4692EB14204146ED00967B57 /* CategorySectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionReusableView.swift; sourceTree = "<group>"; };
 		4692EB1620414CAF00967B57 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		4692EB1A2042903400967B57 /* CategoryDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailListViewController.swift; sourceTree = "<group>"; };
+		4692EB1A2042903400967B57 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
 		4692EB1C2042908800967B57 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		4692EB1E204294E400967B57 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		46A6B12720453DAA005E2214 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,10 @@
 		46C37F282040E297008B6CBA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		46C37F2C2040E494008B6CBA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		46C37F2E2040FB27008B6CBA /* HomeListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCoordinator.swift; sourceTree = "<group>"; };
+		46CC6E162047BBB0003A86E2 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		46CC6E182047C35B003A86E2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		46CC6E1A2047C58F003A86E2 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		46CC6E1C2047C93A003A86E2 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Craigslist_Redesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3A96AB0A4C1CCE03F733E7 /* Pods-Craigslist Redesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craigslist Redesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +114,7 @@
 				4692EB0B20411FA300967B57 /* Category.swift */,
 				4692EB1E204294E400967B57 /* Post.swift */,
 				4677BDBD2046850200BB2489 /* Message.swift */,
+				46CC6E1C2047C93A003A86E2 /* Setting.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +126,7 @@
 				4692EB1620414CAF00967B57 /* CategoryTableViewCell.swift */,
 				4692EB1C2042908800967B57 /* PostTableViewCell.swift */,
 				465C562D20467AA900955D9A /* MessageTableViewCell.swift */,
+				46CC6E1A2047C58F003A86E2 /* SettingTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -171,6 +181,7 @@
 				46C37F0F203FF278008B6CBA /* AppCoordinator.swift */,
 				46C37F2E2040FB27008B6CBA /* HomeListCoordinator.swift */,
 				4677BDBF20468CCC00BB2489 /* MessageListCoordinator.swift */,
+				46CC6E162047BBB0003A86E2 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -183,8 +194,9 @@
 				46C37F19203FF6C5008B6CBA /* CustomTabBarViewController.swift */,
 				46C37F262040E28F008B6CBA /* MessageListViewController.swift */,
 				46C37F282040E297008B6CBA /* ProfileViewController.swift */,
-				4692EB1A2042903400967B57 /* CategoryDetailListViewController.swift */,
+				4692EB1A2042903400967B57 /* PostListViewController.swift */,
 				46A6B12720453DAA005E2214 /* PostDetailViewController.swift */,
+				46CC6E182047C35B003A86E2 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -375,17 +387,21 @@
 				4677BDBE2046850200BB2489 /* Message.swift in Sources */,
 				46A6B12820453DAA005E2214 /* PostDetailViewController.swift in Sources */,
 				46C37F232040D7E3008B6CBA /* UIViewController+Child.swift in Sources */,
+				46CC6E1D2047C93A003A86E2 /* Setting.swift in Sources */,
 				4692EB0C20411FA300967B57 /* Category.swift in Sources */,
 				46C37F12203FF402008B6CBA /* HomeViewController.swift in Sources */,
 				4692EB1F204294E400967B57 /* Post.swift in Sources */,
+				46CC6E192047C35B003A86E2 /* SettingsViewController.swift in Sources */,
 				4692EB1320413DD300967B57 /* UICollectionViewCell+Reuse.swift in Sources */,
+				46CC6E1B2047C58F003A86E2 /* SettingTableViewCell.swift in Sources */,
 				4692EB0E204130A800967B57 /* Enum+Enumerate.swift in Sources */,
 				4692EB1720414CAF00967B57 /* CategoryTableViewCell.swift in Sources */,
 				46C37F292040E297008B6CBA /* ProfileViewController.swift in Sources */,
 				46C37F2F2040FB27008B6CBA /* HomeListCoordinator.swift in Sources */,
-				4692EB1B2042903400967B57 /* CategoryDetailListViewController.swift in Sources */,
+				4692EB1B2042903400967B57 /* PostListViewController.swift in Sources */,
 				46C37F272040E28F008B6CBA /* MessageListViewController.swift in Sources */,
 				46C37F16203FF54F008B6CBA /* BaseViewController.swift in Sources */,
+				46CC6E172047BBB0003A86E2 /* ProfileCoordinator.swift in Sources */,
 				466B30F02044FB1D0055FFFE /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

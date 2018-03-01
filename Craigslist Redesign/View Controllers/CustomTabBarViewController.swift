@@ -16,10 +16,9 @@ class CustomTabBarViewController: BaseViewController {
         return self.view as! CustomTabBarView
     }
 
-    let profileViewController = ProfileViewController()
-
     let homeListCoordinator = HomeListCoordinator()
     let messageListCoordinator = MessageListCoordinator()
+    let profileCoordinator = ProfileCoordinator()
 
     // MARK: - Initialization
 
@@ -54,7 +53,7 @@ class CustomTabBarViewController: BaseViewController {
     }
 
     private func removeChildViewControllers() {
-        profileViewController.remove()
+        profileCoordinator.rootViewController.remove()
         homeListCoordinator.rootViewController.remove()
         messageListCoordinator.rootViewController.remove()
     }
@@ -62,6 +61,7 @@ class CustomTabBarViewController: BaseViewController {
     private func startCoordinators() {
         homeListCoordinator.start()
         messageListCoordinator.start()
+        profileCoordinator.start()
     }
 
 }
@@ -76,7 +76,7 @@ extension CustomTabBarViewController: CustomTabBarDelegate {
         case 1:
             setup(viewController: messageListCoordinator.rootViewController)
         case 2:
-            setup(viewController: profileViewController)
+            setup(viewController: profileCoordinator.rootViewController)
         default:
             print("Unexpected button pressed")
         }

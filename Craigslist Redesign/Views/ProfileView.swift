@@ -9,6 +9,14 @@
 import UIKit
 import PinLayout
 
+protocol ViewPostingsDelegate: class {
+    func presentPostingsViewController()
+}
+
+protocol ViewSettingsDelegate: class {
+    func presentSettingsViewController()
+}
+
 class ProfileView: BaseView {
 
     // MARK: - Instance properties
@@ -55,6 +63,9 @@ class ProfileView: BaseView {
         return button
     }()
 
+    weak var viewPostingsDelegate: ViewPostingsDelegate?
+    weak var viewSettingsDelegate: ViewSettingsDelegate?
+
     // MARK: - Initialization
 
     override init() {
@@ -91,10 +102,10 @@ class ProfileView: BaseView {
     }
 
     @objc private func didTapViewPostingsButton() {
-
+        viewPostingsDelegate?.presentPostingsViewController()
     }
 
     @objc private func didTapSettingsButton() {
-
+        viewSettingsDelegate?.presentSettingsViewController()
     }
 }

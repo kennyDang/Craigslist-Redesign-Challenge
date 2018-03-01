@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
 
         UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = .white
         UINavigationBar.appearance().tintColor = UIColor.customDarkGreen
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         UINavigationBar.appearance().shadowImage = UIImage()

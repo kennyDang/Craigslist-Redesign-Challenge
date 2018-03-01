@@ -13,11 +13,11 @@ protocol PostDelegate: class {
     func didSelect(post: Post)
 }
 
-class CategoryDetailListViewController: UIViewController {
+class PostListViewController: UIViewController {
 
     // MARK: - Instance properties
 
-    var category: Category
+    var category: Category?
 
     var cellTemplate = PostCollectionViewCell()
 
@@ -56,6 +56,10 @@ class CategoryDetailListViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -90,7 +94,7 @@ class CategoryDetailListViewController: UIViewController {
     // MARK: - Setup
 
     private func setupNavigationBar() {
-        navigationItem.title = category.name
+        navigationItem.title = category?.name ?? "My Postings"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
@@ -106,7 +110,7 @@ class CategoryDetailListViewController: UIViewController {
 
     private func setupSearchBar() {
         searchBar.delegate = self
-        searchBar.placeholder = "Search \(category.name)"
+        searchBar.placeholder = "Search \(category?.name ?? "My Postings")"
         searchBar.barTintColor = UIColor.clear
         searchBar.backgroundColor = UIColor.clear
 
@@ -130,7 +134,7 @@ class CategoryDetailListViewController: UIViewController {
 
 }
 
-extension CategoryDetailListViewController: UICollectionViewDataSource {
+extension PostListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCollectionViewCell.reuseIdentifier, for: indexPath) as? PostCollectionViewCell else { return UICollectionViewCell() }
         cell.configure(post: data[indexPath.row])
@@ -150,12 +154,12 @@ extension CategoryDetailListViewController: UICollectionViewDataSource {
     }
 }
 
-extension CategoryDetailListViewController: UICollectionViewDelegateFlowLayout {
+extension PostListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.didSelect(post: data[indexPath.row])
     }
 }
 
-extension CategoryDetailListViewController: UISearchBarDelegate {
+extension PostListViewController: UISearchBarDelegate {
     
 }

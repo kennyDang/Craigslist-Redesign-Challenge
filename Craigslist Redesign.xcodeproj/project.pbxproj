@@ -42,6 +42,7 @@
 		46CC6E192047C35B003A86E2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E182047C35B003A86E2 /* SettingsViewController.swift */; };
 		46CC6E1B2047C58F003A86E2 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E1A2047C58F003A86E2 /* SettingTableViewCell.swift */; };
 		46CC6E1D2047C93A003A86E2 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E1C2047C93A003A86E2 /* Setting.swift */; };
+		46CC6E1F2047D081003A86E2 /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC6E1E2047D081003A86E2 /* ReplyViewController.swift */; };
 		6B736DCB875C2CD963C825A4 /* Pods_Craigslist_Redesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		46CC6E182047C35B003A86E2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		46CC6E1A2047C58F003A86E2 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		46CC6E1C2047C93A003A86E2 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		46CC6E1E2047D081003A86E2 /* ReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
 		89E5B743CE4D68B4CA091849 /* Pods_Craigslist_Redesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Craigslist_Redesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3A96AB0A4C1CCE03F733E7 /* Pods-Craigslist Redesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Craigslist Redesign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Craigslist Redesign/Pods-Craigslist Redesign.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +199,7 @@
 				4692EB1A2042903400967B57 /* PostListViewController.swift */,
 				46A6B12720453DAA005E2214 /* PostDetailViewController.swift */,
 				46CC6E182047C35B003A86E2 /* SettingsViewController.swift */,
+				46CC6E1E2047D081003A86E2 /* ReplyViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				4692EB1320413DD300967B57 /* UICollectionViewCell+Reuse.swift in Sources */,
 				46CC6E1B2047C58F003A86E2 /* SettingTableViewCell.swift in Sources */,
 				4692EB0E204130A800967B57 /* Enum+Enumerate.swift in Sources */,
+				46CC6E1F2047D081003A86E2 /* ReplyViewController.swift in Sources */,
 				4692EB1720414CAF00967B57 /* CategoryTableViewCell.swift in Sources */,
 				46C37F292040E297008B6CBA /* ProfileViewController.swift in Sources */,
 				46C37F2F2040FB27008B6CBA /* HomeListCoordinator.swift in Sources */,

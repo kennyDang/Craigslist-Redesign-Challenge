@@ -53,8 +53,18 @@ extension HomeListCoordinator: PostDelegate {
     }
 }
 
+extension HomeListCoordinator: ReplyDelegate {
+    func presentReplyViewController() {
+        let replyViewController = ReplyViewController()
+        replyViewController.delegate = self
+        
+        navigationController.pushViewController(replyViewController, animated: true)
+    }
+}
+
 extension HomeListCoordinator: FinishedFlowDelegate {
     func didFinishFlow() {
-        print("Completed flow!")
+        print("Finished sending fake message. Back to home!")
+        navigationController.popToRootViewController(animated: false)
     }
 }

@@ -18,6 +18,7 @@ class ProfileViewController: BaseViewController {
 
     override func loadView() {
         view = profileView
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
 }

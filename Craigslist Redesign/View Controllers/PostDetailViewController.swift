@@ -9,8 +9,8 @@
 import UIKit
 import PinLayout
 
-protocol FinishedFlowDelegate: class {
-    func didFinishFlow()
+protocol ReplyDelegate: class {
+    func presentReplyViewController()
 }
 
 class PostDetailViewController: UIViewController {
@@ -70,7 +70,7 @@ class PostDetailViewController: UIViewController {
         return button
     }()
 
-    weak var delegate: FinishedFlowDelegate?
+    weak var delegate: ReplyDelegate?
 
     // MARK: - Initialization
 
@@ -126,7 +126,7 @@ class PostDetailViewController: UIViewController {
     }
 
     @objc private func didTapReply() {
-
+        delegate?.presentReplyViewController()
     }
 
 }
